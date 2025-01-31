@@ -1,0 +1,423 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+.header{
+  width: 100%;
+  height: 75px;
+  position: fixed;
+  background-color: rgba(19, 22, 26, 0.4);
+  box-shadow: 0px 1px 10px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.navbar-nav{
+  display: flex;
+  justify-content: center;
+  line-height: 20px;
+}
+
+.navbar-nav a{
+  color: forestgreen;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  line-height: normal;
+  font-size: 18px;
+  transition: height 0.2s ease-in-out; 
+  border-bottom: 4px solid transparent;
+}
+ 
+.navbar-nav a:hover{
+  color: #40de32;
+  border-bottom: 4px solid #40de32;
+}
+
+
+.banner {
+background: url("img/bg.gif") no-repeat center bottom fixed;
+background-size: cover;
+display: flex; 
+align-items: center; 
+text-align: left;
+padding-left: 300px;
+padding-top: 10%;
+}
+
+
+.banner h1{
+font-size: 4.5rem;
+font-weight: 700;
+color: white;
+}
+
+.banner p{
+font-size: 2.5rem;
+line-height: 1;
+color:dimgrey;
+}
+
+.banner img{
+width: 300px;
+height: 300px;
+border-radius: 50%;
+margin: 70px 200px 150px;
+border: 3px solid rgb(138, 92, 24);
+}
+
+a.social-button a.social-button, a.link-twitter, a.link-instagram{
+background: #fff;
+font-size: 15px;
+border-radius: 50%;
+transition: transform 0.3s ease;
+}
+
+a.link-twitter{
+color:#1DA1F2;
+}
+
+a.link-instagram{
+color:#e95950;
+}
+
+a.link-twitter:hover{
+background-color: #1DA1F2;
+color: #fff;
+}
+
+a.link-instagram:hover{
+background-color: #e95950;
+color: #fff;
+}
+
+
+#skills{
+background: url("img/bg.gif") no-repeat center bottom fixed;
+background-size: cover;
+text-align: center;
+}
+
+.skill h2{
+font-size: 3.5rem;
+font-weight: 700;
+color: #fff;
+padding-top:10%;
+margin-bottom: 3%;
+}
+
+.skill img {
+width: auto;
+height: 85px;
+margin: 20px; 
+transition: transform 0.3s ease, box-shadow 0.3s ease; 
+border-radius: 10px; 
+}
+
+.skill img:hover {
+justify-content: center;
+transform: scale(1.2);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#projects {
+background: url("img/bg.gif") no-repeat center bottom fixed;
+background-size: cover;
+padding: 200px 10px;
+text-align: center;
+}
+
+#projects h2 {
+color: #fff;
+font-size: 3.5rem;
+font-weight: 700;
+margin-bottom: 30px;
+}
+
+.projects-container {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.project-card {
+background: #010504;
+border: 2px solid cyan;
+border-radius: 10px;
+width: 300px;
+padding: 20px;
+text-align: center;
+color: rgb(255, 255, 255);
+}
+
+.project-card img {
+max-width: 100%;
+height: auto;
+border-radius: 5px;
+}
+
+.project-card h3 {
+font-size: 1.5rem;
+margin: 15px 0;
+}
+
+.project-card button {
+background-color: rgb(90, 15, 77);
+color: #e2d9d9;
+border: none;
+padding: 10px 20px;
+font-size: 1rem;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.project-card button:hover {
+background-color: #00bcd4;
+}
+
+
+.card img{
+margin-top: 5px;
+}
+
+.card-icons {
+display: flex;
+justify-content: center;
+gap: 5px;
+margin-top: 10px;
+margin-bottom: 15px;
+}
+
+.card-icons i {
+transition: transform 0.3s ease, color 0.3s ease; /
+}
+
+.card-icons i:hover {
+transform: scale(1.2); 
+color: #007bff;
+}
+
+.card-icons .fa-html5 {
+color: #e34c26; 
+}
+
+.card-icons .fa-css3-alt {
+color: #1572b6; 
+}
+
+.card-icons .fa-js {
+color: #8b7c04; 
+}
+
+.card-icons .fa-bootstrap {
+color: #7952b3;
+}
+
+#about {
+background: url("img/bg.gif") no-repeat center bottom fixed;
+background-size: cover;
+text-align: center;
+color: #fff;
+padding-bottom: 10%;
+padding-top: 10%;
+}
+
+#about h2 {
+margin-bottom: 10px;
+font-size: 3.5rem;
+font-weight: 700;
+}
+
+.about-container {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.about-text {
+flex: 1;
+max-width: 500px;
+text-align: left;
+margin-right: 5%;
+}
+
+.about-text p {
+font-size: 1.2rem;
+line-height: 1.8;
+margin-top: 15%;
+}
+
+.about-image img {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid rgb(183, 0, 255);
+}
+
+footer {
+font-size: 1.5em;
+color: white;
+background: url("img/bg.gif") no-repeat center bottom fixed;
+background-size: cover;
+padding: 200px 10px;
+text-align: center;
+}
+
+.footer-img {
+width: 300px;
+height: 300px;
+border-radius: 50%;
+margin-bottom: 30px;
+border: 3px solid rgb(71, 55, 0);
+}
+
+
+a.social-button:hover {
+transform: scale(1.1);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+a.social-button a.social-button, a.link-twitter, a.link-instagram{
+background: #fff;
+font-size: 20px;
+border-radius: 50%;
+margin: 5px;
+transition: transform 0.3s ease;
+
+}
+
+a.link-twitter{
+color:#1DA1F2;
+}
+
+a.link-instagram{
+color:#e95950;
+}
+
+a.link-twitter:hover{
+background-color: #1DA1F2;
+color: #fff;
+}
+
+a.link-instagram:hover{
+background-color: #e95950;
+color: #fff;
+}
+
+.btn-default {
+color: #333;
+background-color: #fff;
+border-color: transparent!important;
+}
+
+hr.footer-hr{
+width:100%;
+}
+
+@media (300px <= width <= 870px){
+
+  .header {
+    height: initial;
+    flex-direction: column;
+    background-color: rgba(34, 18, 59, 0.4);
+  }
+  
+  .navbar-nav{
+    align-items: center;
+    background-color: rgba(48, 11, 34, 0.8); 
+    border-radius: 8px;
+    padding: 1px 12px; 
+    margin: 5px 0; 
+    transition: background-color 0.3s ease-in-out; 
+  }
+
+  .navbar-collapse {
+    transition: all 0.2s ease-in-out !important; 
+  }
+  
+  
+  .navbar-toggler {
+    border-color: rgb(163, 78, 159);
+  }
+  
+  .navbar-toggler-icon {
+    filter: invert(100%);
+  }
+  
+  .banner {
+    flex-direction: column;
+    padding-left: 12%;
+    padding-top: 200px;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  
+  .banner h1 {
+    font-size: 2.5rem;
+    margin-left: 1%;
+  }
+  
+  .banner p {
+    font-size: 1.4rem;
+    margin-left: 1%;
+
+  }
+  
+  .banner img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+
+  .skill h2{
+    padding-top: 100px;
+    font-size: 2.2rem;
+  }
+
+  .skill img {
+    width: auto;
+    margin: 5px;
+    
+  }
+
+  #projects h2{
+    font-size: 2.2rem;
+  }
+
+  .projects-container {
+    flex-direction:row;
+    align-items: center;
+    gap: 10px;
+  }
+ 
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  #about h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-text {
+    text-align: justify;
+    margin: 20px;
+  }
+
+  .about-image{
+    height: initial;
+  }
+  
+  .footer-img{
+    height: initial;
+  }
+}
